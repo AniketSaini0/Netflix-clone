@@ -1,0 +1,5 @@
+.app{
+    /* for bgc to be black we need the height of the container
+    but we cannot fix height of the app since we need to scrolln  */
+    background-color: #111;
+}
