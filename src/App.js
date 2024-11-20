@@ -4,9 +4,9 @@ import HomeScreen from './Screens/HomeScreen';
 import {
   BrowserRouter,
   Routes,
-  Switch,
   Route,
 } from "react-router-dom"
+import LoginScreen from './Screens/LoginScreen';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         {!user ?
           (<Routes>
-          <Route exact path="/" element={<h1>wow this is test route</h1>}/>
+          <Route exact path="/" element={<LoginScreen />}/>
           </Routes>
           ) : (
           <Routes>
