@@ -1,12 +1,7 @@
 .signupScreen{
-    /* position: relative; */
-    /* top: 0; */
-    /* z-index: 1; */
     max-width: 320px;
     padding: 40px 65px;
-    /* padding-top: 40px; */
     border-radius: 4px;
-    /* object-fit: contain; */
     margin-left: auto;
     margin-right: auto;
     background: rgba(0, 0, 0, 0.75);
@@ -33,13 +28,13 @@
     border: none;
     padding: 5px 15px;
     background: rgba(23, 23, 23, 0.4);
-    border: solid rgb(98, 98, 98) 0.8px;
+    border: solid rgb(98, 98, 98) 0.8px; 
+    color: #fff;
 }
 
 .signupScreen > form > button{
     padding: 10px 20px;
     font-size: 1rem;
-    /* font-weight: 450; */
     font: bold;
     color: #fff;
     border-radius: 5px;
@@ -102,6 +97,8 @@ h3{
     text-decoration: underline;
     cursor: pointer;
 }
+
+/* ************************Not Used**************************** */
 
 /* .signupScreen__gradient{
     height: 150vh;

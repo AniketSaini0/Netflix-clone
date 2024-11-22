@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         {!user ?
           (<Routes>
-          <Route exact path="/" element={<LoginScreen />}/>
+              <Route exact path="/" element={<LoginScreen />}/>
           </Routes>
           ) : (
           <Routes>

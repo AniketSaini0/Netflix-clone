@@ -4,7 +4,7 @@ import "./LoginScreen.css"
 import SignupScreen from './SignupScreen';
 
 function LoginScreen() {
-    const [signIn, setSignIn] = useState([false]);
+    const [signIn, setSignIn] = useState(false);
 
     return (
         <div className="loginScreen">
@@ -16,7 +16,7 @@ function LoginScreen() {
             <div className="loginScreen__body">
                 {signIn ? (
                     <>
-                      <SignupScreen />   
+                        <SignupScreen />
                     </>
                 ) : (
                     <>
