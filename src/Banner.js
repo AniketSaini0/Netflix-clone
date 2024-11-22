@@ -3,7 +3,9 @@ import './Banner.css';
 import axios from "./axios";
 import requests from './Requests';
 
-function Banner() {
+function Banner(user_id) {
+    const[userId, setUserId] = useState([false])
+
     //this below is to set the state of the banner movie
     const [movie, setMovie] = useState([]);/*this is an empty array initially*/
     //for fetching the movie in the banner.
@@ -40,7 +42,7 @@ function Banner() {
             <div className="banner__contents">
                 <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
                 <div className="banner__buttons">
-                    <button className='banner__button'>Play</button>
+                    <button onClick={setUserId(user_id)} className='banner__button'>Play</button>
                     <button className='banner__button'>My List</button>
                 </div>
                 <div className="banner__description">

@@ -4,24 +4,41 @@
     background: url("https://wallpaperaccess.com/full/712404.jpg") center no-repeat;
     background-size: cover;
     object-fit: contain;
+    min-height: 100%;
+}
+
+.loginScreen__background{
+    margin-bottom: 10px;
+}
+.signupScreen__blackBg{
+    position: relative;
+    height: 220vh;
+    background: #000;
+
+}
+
+.loginScreen_bgBlack{
+    z-index: 1;
+    background-color: black;
+    height: 50vh;
 }
 
 .loginScreen__gradient{
     width: 100% ;
-    height: 110vh;
+    height: 100vh;
     z-index: 1;
     background: rgba(0, 0, 0, 0.4);
     background-image: linear-gradient(
         
-        rgba(0,0,0,0.8) 0,
-        rgba(0,0,0,0) 60%,
-        rgba(0,0,0,0.8) 100%
+        rgba(0,0,0,0.7) 0,
+        rgba(0, 0, 0,0) 60%,    
+        rgba(0,0,0,0.7) 100%
      );
 }
 
 .loginScreen__body > h1{
     font-size-adjust: 3.123rem;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .loginScreen__body > h2{
@@ -36,18 +53,20 @@
 
 .loginScreen__body{
     position: absolute;
-    top: 30%;
+    top: 20%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     z-index: 1;
     color: #fff;
     padding: 20px;
+    left: 0;
+    right: 0;
 }
 
 .loginScreen__button{
     position: fixed;
-    right:20px;
+    right:5%;
     top: 20px;
     /* 10 on top,bottom and 20 on the sides */
     padding:  10px 20px; 
@@ -62,7 +81,7 @@
 
 .loginScreen__logo{
     position: fixed;
-    left: 0;
+    left: 10%;
     width: 150px;
     object-fit: contain;
     padding-left: 20px;
@@ -83,7 +102,7 @@
 
 .loginScreen__getStarted{
     padding: 15px 20px;    
-     outline-width: 0;
+    outline-width: 0;
     font-size: 1rem;
     color: #fff;
     background-color: #e50914;
