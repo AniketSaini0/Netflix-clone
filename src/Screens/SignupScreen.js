@@ -9,6 +9,7 @@ function SignupScreen() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
 
+  //function for registering the user
   const register = (e) => {
     e.preventDefault();
 
@@ -23,6 +24,7 @@ function SignupScreen() {
       });
   }
 
+  //function for signing in with existing user.
   const signIn = (e) => {
     e.preventDefault();
 

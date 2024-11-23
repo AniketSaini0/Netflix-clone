@@ -3,7 +3,7 @@ import './Banner.css';
 import axios from "./axios";
 import requests from './Requests';
 
-function Banner(user_id) {
+function Banner() {
     const[userId, setUserId] = useState([false])
 
     //this below is to set the state of the banner movie
@@ -42,7 +42,7 @@ function Banner(user_id) {
             <div className="banner__contents">
                 <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
                 <div className="banner__buttons">
-                    <button onClick={setUserId(user_id)} className='banner__button'>Play</button>
+                    <button className='banner__button'>Play</button>
                     <button className='banner__button'>My List</button>
                 </div>
                 <div className="banner__description">
