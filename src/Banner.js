@@ -4,7 +4,6 @@ import axios from "./axios";
 import requests from './Requests';
 
 function Banner() {
-    const[userId, setUserId] = useState([false])
 
     //this below is to set the state of the banner movie
     const [movie, setMovie] = useState([]);/*this is an empty array initially*/
