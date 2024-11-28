@@ -31,12 +31,12 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
                     ((isLargeRow && movie.poster_path) || (!isLargeRow && movie.backdrop_path)) &&
                     (<>
                         <div className="row__element">
-                        <img className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-                            key={movie.id}
-                            src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
-                            alt={movie.name} />
-                        <div className={`row__title`}>
-                            {isLargeRow ? "" : movie.title}</div>
+                            <img className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+                                key={movie.id}
+                                src={`${base_url}${ isLargeRow ? movie.poster_path : movie.backdrop_path}`}
+                                alt={movie.name} />
+                            <div className={`row__title`}>
+                                {isLargeRow ? "" : (movie.title? movie.title : movie.name)}</div>
                         </div>
 
                     </>

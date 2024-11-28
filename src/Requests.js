@@ -17,4 +17,4 @@ const requests = {
 export default requests;
 
 //this is how it will work => baseURL + fetchTrending = complete URL.
-//https://api.themoviedb.org/3/trending/all/week?api_key=e19b091475c97c24c434e5837c44da9e&language=en-US
+//https://api.themoviedb.org/3/movie/top_rated?api_key=e19b091475c97c24c434e5837c44da9e&language=en-US
