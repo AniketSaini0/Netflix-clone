@@ -16,7 +16,7 @@ function ProfileScreen() {
         <div className='profileScreen'>
             <Nav />
             <div className="profileScreen__body">
-                <h2>Edit Profile</h2>
+                <h1>Edit Profile</h1>
                 <div className="profileScreen__info">
                     <img src="https://imgs.search.brave.com/oQQTwl5cscHd0BIaUN8VMmcBueQpp1Q52rQONS6wpHs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzdiL2M1/LzAzLzdiYzUwMzNj/NzRhOTZhMTYxZjEy/ODNkZTUwNmI4MTdj/LmpwZw"
                         alt="" />
