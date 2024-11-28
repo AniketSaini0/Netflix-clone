@@ -29,14 +29,20 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
                 {movies.map((movie) => (
                     //This condition is to avoid breaks(means render only those movie posters which are available according tot he conditions.)
                     ((isLargeRow && movie.poster_path) || (!isLargeRow && movie.backdrop_path)) &&
-                    (
+                    (<>
+                        <div className="row__element">
                         <img className={`row__poster ${isLargeRow && "row__posterLarge"}`}
                             key={movie.id}
                             src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
                             alt={movie.name} />
+                        <div className={`row__title`}>
+                            {isLargeRow ? "" : movie.title}</div>
+                        </div>
+
+                    </>
                     )
-                    ))}
-                    
+                ))}
+
             </div>
 
         </div>
