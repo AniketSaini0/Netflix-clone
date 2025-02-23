@@ -52,7 +52,7 @@
 
 .loginScreen__body {
   position: absolute;
-  top: 20%;
+  top: 30%;
   text-align: center;
   z-index: 1;
   color: #fff;
@@ -73,6 +73,9 @@
   color: #fff;
   background-color: #e50914;
   border: none;
+}
+.loginScreen__button:hover {
+  background-color: #930910;
 }
 
 .loginScreen__logo {

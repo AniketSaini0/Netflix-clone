@@ -92,6 +92,10 @@ h3 {
   color: gray;
 }
 
+#signin__button:hover {
+  background-color: #930910;
+}
+
 .signupScreen__link:hover {
   text-decoration: underline;
   cursor: pointer;
