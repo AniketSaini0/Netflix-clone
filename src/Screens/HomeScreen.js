@@ -1,29 +1,71 @@
-import React from 'react';
+import React from "react";
 import "./HomeScreen.css";
-import Navbar from '../Navbar';
-import Banner from '../Banner';
-import requests from '../Requests';
-import Row from '../Row';
-
+import Navbar from "../Navbar";
+import Banner from "../Banner";
+import requests, { metaData } from "../Requests";
+import Row from "../Row";
+import { FixedSizeList as List } from "react-window";
 
 function HomeScreen() {
-    return (
-        <div className='homeScreen'>
-            <Navbar />
+  const viewWidth = window.innerWidth;
+  const viewHeight = window.innerHeight;
 
-            <Banner/>
+  const row = () => (
+    <div>
+      <Row
+        title="Netflix Originals"
+        fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
+      />
+      <Row
+        title={metaData[0].title}
+        fetchUrl={metaData[0].url}
+      />
+      <Row
+        title={metaData[1].title}
+        fetchUrl={metaData[1].url}
+      />
+      <Row
+        title={metaData[2].title}
+        fetchUrl={metaData[2].url}
+      />
+      <Row
+        title={metaData[3].title}
+        fetchUrl={metaData[3].url}
+      />
+      <Row
+        title={metaData[4].title}
+        fetchUrl={metaData[4].url}
+      />
+      <Row
+        title={metaData[5].title}
+        fetchUrl={metaData[5].url}
+      />
+      <Row
+        title={metaData[6].title}
+        fetchUrl={metaData[6].url}
+      />
+    </div>
+  );
 
-             <Row title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow/>
-             <Row title="Trending Now" fetchUrl={requests.fetchTopRated}/>
-             <Row title="Top Rated" fetchUrl={requests.fetchTrending}/>
-             <Row title="Action Movies" fetchUrl={requests.fetchActionMovies}/>
-             <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies}/>
-             <Row title="Horror MOvies" fetchUrl={requests.fetchHorrorMovies}/>
-             <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies}/>
-             <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries}/>
-             
-        </div>
-    )
+  return (
+    <div className="homeScreen">
+      <Navbar />
+
+      <Banner />
+
+      <List
+        // className="row__poster"
+        height={viewHeight}
+        itemCount={1}
+        itemSize={viewHeight}
+        // layout="horizontal"
+        width={viewWidth}
+      >
+        {row}
+      </List>
+    </div>
+  );
 }
 
-export default HomeScreen
+export default HomeScreen;
