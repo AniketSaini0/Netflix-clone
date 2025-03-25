@@ -1,8 +1,8 @@
 .loginScreen {
   position: relative;
   height: 110%;
-  background: url("https://wallpaperaccess.com/full/712404.jpg")
-    center no-repeat;
+  background: url("https://wallpaperaccess.com/full/712404.jpg") center
+    no-repeat;
   background-size: cover;
   object-fit: contain;
   min-height: 100%;
@@ -52,7 +52,7 @@
 
 .loginScreen__body {
   position: absolute;
-  top: 30%;
+  top: 25%;
   text-align: center;
   z-index: 1;
   color: #fff;

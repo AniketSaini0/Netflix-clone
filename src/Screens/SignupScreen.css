@@ -1,6 +1,7 @@
 .signupScreen {
-  max-width: 320px;
-  padding: 40px 65px;
+  max-width: 310px;
+  padding: 38px 65px;
+  margin-bottom: 0;
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
@@ -10,8 +11,9 @@
 /* ********VERY IMPORTANT STYLE******** */
 /* this alone is enough to align the elements of form vertically with same width */
 .signupScreen > form {
-  display: grid;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 /* ********                     *********/
 
@@ -99,6 +101,99 @@ h3 {
 .signupScreen__link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* medium Devices (Tablets, 576px - 768px) */
+@media (max-width: 768px) {
+  .signupScreen {
+    width: 70%;
+    height: auto;
+    padding: 40px 65px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .signupScreen > form {
+    margin: auto;
+  }
+  .signupScreen > form > input {
+    outline-width: 0;
+    font-size: 1rem;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 12px;
+    background: rgba(23, 23, 23, 0.4);
+    border: solid rgb(98, 98, 98) 0.8px;
+    color: #fff;
+  }
+}
+
+/* Small Devices (Phones, up to 576px) */
+@media (min-width: 461px) and (max-width: 767px) {
+  .signupScreen {
+    width: 65%;
+    width: fit-content;
+    height: auto; /* Adjust height */
+    padding: 40px 65px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .signupScreen > form > input {
+    outline-width: 0;
+    font-size: 0.9rem;
+    height: 35px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: none;
+    padding: 4px 10px;
+    background: rgba(23, 23, 23, 0.4);
+    border: solid rgb(98, 98, 98) 0.8px;
+    color: #fff;
+  }
+
+  .signupScreen > form > button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .signupScreen > form > h4 {
+    text-align: left;
+    margin-top: 12px;
+    font-weight: 350;
+  }
+}
+
+/* Small Devices (Phones, up to 460px) */
+@media (max-width: 460px) {
+  .signupScreen {
+    width: 55%;
+    height: auto; /* Adjust height */
+    padding: 37px 58px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .signupScreen > form > input {
+    outline-width: 0;
+    font-size: 0.8rem;
+    height: 33px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: none;
+    padding: 4px 12px;
+    background: rgba(23, 23, 23, 0.4);
+    border: solid rgb(98, 98, 98) 0.8px;
+    color: #fff;
+  }
+
+  .signupScreen > form > button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .signupScreen > form > h4 {
+    text-align: left;
+    margin-top: 12px;
+    font-weight: 350;
+  }
 }
 
 /* ************************Not Used**************************** */
